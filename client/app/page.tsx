@@ -9,6 +9,9 @@ import { IoMailOutline } from "react-icons/io5";
 import { IoBookmarkOutline } from "react-icons/io5";
 import { CgCommunity } from "react-icons/cg";
 import { CgProfile } from "react-icons/cg";
+import FeedCard from "./compoents/FeedCard";
+// import { FeedCard } from "compoents/FeedCard"
+
 
 const inter = Inter({ subsets: ['latin']})
 
@@ -62,7 +65,7 @@ export default function Home() {
           <div className="h-fit fill-white text-4xl hover:bg-gray-800 rounded-full p-2 cursor-pointer transition-all ">
                   <BsTwitter className="fill-white" /> 
           </div>
-          <div className="mt-2  text-2xl ">
+          <div className="mt-2 text-2xl">
           <ul>
             {sideBarMenuItems.map(
               (item) => (<li className="flex justify-start items-center gap-2 text-white hover:bg-gray-800 cursor-pointer transition-all rounded-full px-5  py-2 w-fit" key="{item.title}">
@@ -76,7 +79,7 @@ export default function Home() {
           <button className="bg-sky-500 p-4 text-2xl rounded-full w-full mt-4">Tweet</button>
       </div>
       <div className="col-span-6 boredr border-l-[0.5px] border-r-[0.5px] border-r-slate-500 border-l-slate-500">
-      
+      <FeedCard />
       </div>
       <div className="col-span-3"></div>
     </div>
